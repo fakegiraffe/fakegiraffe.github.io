@@ -22,25 +22,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Matt M" />
+<meta property="og:title" content="Alpine Linux - Using nftables" />
 <meta name="author" content="Matt M" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation." />
-<meta property="og:description" content="A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation." />
-<link rel="canonical" href="/" />
-<meta property="og:url" content="/" />
+<meta name="description" content="Setting up Install Alpine Linux. Having a port listening (ssh or http for example) will help in testing out your firewall rules. Next, install nftables with the following command. 1 $ apk add nftables The Alpine installer will pull in any necessary dependencies." />
+<meta property="og:description" content="Setting up Install Alpine Linux. Having a port listening (ssh or http for example) will help in testing out your firewall rules. Next, install nftables with the following command. 1 $ apk add nftables The Alpine installer will pull in any necessary dependencies." />
+<link rel="canonical" href="/posts/alpine-nftables/" />
+<meta property="og:url" content="/posts/alpine-nftables/" />
 <meta property="og:site_name" content="Matt M" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-08T09:57:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Matt M" />
+<meta property="twitter:title" content="Alpine Linux - Using nftables" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@Matt M" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Matt M"},"url":"/","@type":"WebSite","description":"A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.","name":"your_full_name","headline":"Matt M","sameAs":["https://twitter.com/username","https://github.com/username"],"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Matt M"},"url":"/posts/alpine-nftables/","@type":"BlogPosting","description":"Setting up Install Alpine Linux. Having a port listening (ssh or http for example) will help in testing out your firewall rules. Next, install nftables with the following command. 1 $ apk add nftables The Alpine installer will pull in any necessary dependencies.","headline":"Alpine Linux - Using nftables","dateModified":"2021-03-08T09:57:00-06:00","datePublished":"2021-03-08T09:57:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/alpine-nftables/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Matt M
+  <title>Alpine Linux - Using nftables | Matt M
   </title>
 
   <!--
@@ -106,6 +108,9 @@
 <link rel="stylesheet" href="/assets/css/style.css">
 
 
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+
 
 
   <!-- JavaScripts -->
@@ -126,7 +131,7 @@
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
@@ -162,7 +167,7 @@
 
   <ul class="w-100">
     <!-- home -->
-    <li class="nav-item active">
+    <li class="nav-item">
       <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HOME</span>
@@ -421,8 +426,36 @@
     
 
     
-      <!-- index page -->
-      <span>Posts</span>
+
+      
+
+        
+          
+
+        
+
+      
+
+        
+        <span>
+          
+          
+          <a href="/">
+            Posts
+          </a>
+        </span>
+
+        
+
+      
+
+        
+          <span>Alpine Linux - Using nftables</span>
+
+        
+
+      
+
     
 
     </span><!-- endof #breadcrumb -->
@@ -430,7 +463,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Matt M
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -473,151 +506,33 @@
 
 
 
+  
+
+  
+
+  <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+  
+  
+
+  
+
+  
+
+
+
 <!-- return -->
 <div class="row">
-  <div class="col-12 col-lg-11 col-xl-8">
-    <div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
-    
-      
 
+  <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
 
+    <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
-<!-- Get pinned posts -->
+      <h1 data-toc-skip>Alpine Linux - Using nftables</h1>
 
-
-
-
-
-
-
-<!-- Get default posts -->
-
-
-
-
-
-
-
-
-
-
-
-<div id="post-list">
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/vulnhub-dawn3/">Vulnhub - Sunset Dawn3 walkthrough</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Introduction
-Vulnhub dawn2 is listed on Vulnhub’s site as beginner/intermediate. This shares a lot of similarities with Sunset Dawn2, only this is VM is a bit easier to pop. Skills you’ll need are ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Wed, Mar 10, 2021,  1:38 PM -0600"
-  >
-
-  
-  
-
-  
-    Mar 10
-  
-
-  <i class="unloaded">2021-03-10T13:38:00-06:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1141 words">6 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>Pinned</span>
-      </div>
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/alpine-nftables/">Alpine Linux - Using nftables</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Setting up
-Install Alpine Linux. Having a port listening (ssh or http for example) will help in testing out your firewall rules.
-Next, install nftables with the following command.
-$ apk add nftable...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
+      <div class="post-meta text-muted d-flex flex-column">
+        <!-- Published date and author -->
+        <div>
+          <!--
   Date format snippet
 -->
 
@@ -643,10 +558,18 @@ $ apk add nftable...
 
 </span>
 
+          by
+          <span class="author">
+            Matt M
+          </span>
+        </div>
 
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
+        <div>
+          <!-- lastmod -->
+          
+
+          <!-- read time -->
+          <!--
   Calculate the post's reading time, and display the word count in tooltip
  -->
 
@@ -663,254 +586,192 @@ $ apk add nftable...
 <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="320 words">1 min</span>
 
 
-        <!-- page views -->
-        
-      </div>
+          <!-- page views -->
+          
 
-      
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>Pinned</span>
-      </div>
-      
+        </div>
 
-    </div> <!-- .post-meta -->
+      </div> <!-- .post-meta -->
 
-  </div> <!-- .post-review -->
+      <div class="post-content">
 
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/vulnhub-dawn2/">Vulnhub - Sunset Dawn2 walkthrough</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
         
 
+        <h2 id="setting-up">Setting up</h2>
+<p>Install Alpine Linux. Having a port listening (<code class="language-plaintext highlighter-rouge">ssh</code> or <code class="language-plaintext highlighter-rouge">http</code> for example) will help in testing out your firewall rules.
+Next, install nftables with the following command.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>apk add nftables
+</pre></td></tr></tbody></table></code></div></div>
+<p>The Alpine installer will pull in any necessary dependencies.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/alpine-nft-1.png" alt="screenshot" class="normal" /></p>
+
+<h2 id="configuration">Configuration</h2>
+<p>We’ll be working with the file /etc/firewall.nft. By default this file is empty. Let’s populate it. This is a basic nf rules script that I use as a base to build from.</p>
+
+<pre><code class="language-code">#!/usr/bin/nft -f
+# ipv4/ipv6 Simple &amp; Safe Firewall
+# you can find examples in /usr/share/nftables/
+
+table inet filter {
+  chain input {
+    type filter hook input priority 0;
+
+    # allow established/related connections
+    ct state {established, related} accept
+
+    # early drop of invalid connections
+    ct state invalid drop
+
+    # allow from loopback
+    iifname lo accept
+
+    # allow icmp
+    ip protocol icmp accept
+    ip6 nexthdr icmpv6 accept
+
+    # allow ssh
+    #tcp dport ssh accept
+    tcp dport 80 accept
+    tcp dport 22 accept
+
+    # everything else
+    reject with icmpx type port-unreachable
+  }
+  chain forward {
+    type filter hook forward priority 0;
+    drop
+  }
+  chain output {
+    type filter hook output priority 0;
+  }
+
+}
+</code></pre>
+<p>This script will open port 80 and 22. Changing ports or adding others should be self explanatory. This script will also cause the firewall to track connections and keep state, allow ICMP echo request and drop everything else that doesn’t match the previous rules.</p>
+
+<p>Next, make sure your kernel modules are loaded.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>modprobe nf_tables
+</pre></td></tr></tbody></table></code></div></div>
+<p>Enable nftables rc scripts. We want the firewall to start at boot time.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>rc-update nftables add default
+</pre></td></tr></tbody></table></code></div></div>
+<p>Use OpenRC to save the tables.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>rc-service nftables save
+</pre></td></tr></tbody></table></code></div></div>
+<p>Confirm the nftables service has been started.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>rc-service nftables start
+</pre></td></tr></tbody></table></code></div></div>
+<p>Ok. Let’s confirm our firewall is in place and running.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>nft list ruleset
+</pre></td></tr></tbody></table></code></div></div>
+<p>Your output should look like the following.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/alpine-nft-2.png" alt="screenshot" />
+Excellent, our rules have been applied and our firewall is up and running!</p>
 
 
+      </div>
 
+      <div class="post-tail-wrapper text-muted">
 
-        Introduction
-The vulnhub discription says this VM is intermediate difficulty. Some of the skills you’ll be required to use are as follows:
+        <!-- categories -->
+        
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/systems/'>systems</a>,
+            <a href='/categories/linux/'>linux</a>
+        </div>
+        
 
+        <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/infosec/"
+            class="post-tag no-text-decoration" >infosec</a>
+          
+          <a href="/tags/linux/"
+            class="post-tag no-text-decoration" >linux</a>
+          
+          <a href="/tags/unix/"
+            class="post-tag no-text-decoration" >unix</a>
+          
+          <a href="/tags/configuration/"
+            class="post-tag no-text-decoration" >configuration</a>
+          
+          <a href="/tags/security/"
+            class="post-tag no-text-decoration" >security</a>
+          
+          </div>
+        
 
-  basic reconnaissance
-  port mapping
-  unlisted file an...
-      </p>
-    </div>
+        <div class="post-tail-bottom
+          d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+          
+          <div class="license-wrapper">
+            This post is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            by the author.
+          </div>
+          
 
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
+          <!--
+ Post sharing snippet
 -->
 
+<div class="share-wrapper">
+  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-icons">
+    
+    
 
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Wed, Mar  3, 2021,  1:38 PM -0600"
-  >
-
-  
-  
-
-  
-    Mar  3
-  
-
-  <i class="unloaded">2021-03-03T13:38:00-06:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1948 words">10 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
+    
       
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>Pinned</span>
-      </div>
+        <a href="https://twitter.com/intent/tweet?text=Alpine Linux - Using nftables - Matt M&url=/posts/alpine-nftables/" data-toggle="tooltip" data-placement="top"
+          title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fa-fw fab fa-twitter"></i>
+        </a>
+    
       
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/vulnhub-walkthroughs/">Vulnhub walkthroughs</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        On the issue of walkthroughs
-When I first discovered intentionally vulnerable virtual machines, I got so sucked into (lost even) in the world of ethical hacking. I absolutely loved thrill of quickl...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
--->
-
-
-
-
-
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Mon, Mar  1, 2021, 10:02 AM -0600"
-  >
-
-  
-  
-
-  
-    Mar  1
-  
-
-  <i class="unloaded">2021-03-01T10:02:00-06:00</i>
-
-</span>
-
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-<!-- words per minute  -->
-
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="296 words">1 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Alpine Linux - Using nftables - Matt M&u=/posts/alpine-nftables/" data-toggle="tooltip" data-placement="top"
+          title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-fw fab fa-facebook-square"></i>
+        </a>
+    
       
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>Pinned</span>
-      </div>
-      
+        <a href="https://telegram.me/share?text=Alpine Linux - Using nftables - Matt M&url=/posts/alpine-nftables/" data-toggle="tooltip" data-placement="top"
+          title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-fw fab fa-telegram"></i>
+        </a>
+    
 
-    </div> <!-- .post-meta -->
+    <i class="fa-fw fas fa-link small" onclick="copyLink()"
+        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
 
-  </div> <!-- .post-review -->
-
-
-
-</div> <!-- #post-list -->
+  </span>
+</div>
 
 
-  <!--
-  The paginator for post list on HomgPage.
--->
+        </div><!-- .post-tail-bottom -->
 
-<ul class="pagination mt-4 mb-0 pl-lg-2">
-  <!-- left arrow -->
-  
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="previous-page">
-      <i class="fas fa-angle-left"></i>
-    </a>
-  </li>
+      </div><!-- div.post-tail -->
 
-  <!-- page numbers -->
-  
+    </div> <!-- .post -->
+
+
+  </div> <!-- #post-wrapper -->
+
   
 
   
-
-    
-    
-    
-    
-    
-
-    
-
-    
-      <!-- show number -->
-      <li class="page-item  active">
-        <a class="page-link btn-box-shadow" href="/">1</a>
-      </li>
-    
-
-  
-
-  <!-- right arrow -->
-  
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="next-page">
-      <i class="fas fa-angle-right"></i>
-    </a>
-  </li>
-
-</ul> <!-- .pagination -->
-
-
-
-    
-    </div> <!-- #page -->
-  </div><!-- .col-12 -->
 
   <!--
   The Pannel on right side (Desktop views)
@@ -1171,14 +1032,288 @@ When I first discovered intentionally vulnerable virtual machines, I got so suck
   </div> <!-- .access -->
 
   
+    <!-- BS-toc.js will be loaded at medium priority -->
+    <script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">Contents</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
 
+</div> <!-- .row -->
+
+<div class="row">
+  <div class="col-12 col-lg-11 col-xl-8">
+    <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
+
+    <!--
+ Recommend the other 3 posts according to the tags and categories of the current post,
+ if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts  -->
+
+
+<!-- An random integer that bigger than 0  -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy}  -->
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<!-- Fill with the other newlest posts  -->
+
+
+
+
+
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1"
+      data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/vulnhub-walkthroughs/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+-->
+
+
+
+
+
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Mar  1
+  
+
+  <i class="unloaded">2021-03-01T10:02:00-06:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Vulnhub walkthroughs</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                On the issue of walkthroughs
+When I first discovered intentionally vulnerable virtual machines, I got so sucked into (lost even) in the world of ethical hacking. I absolutely loved thrill of quickl...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/vulnhub-dawn2/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+-->
+
+
+
+
+
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Mar  3
+  
+
+  <i class="unloaded">2021-03-03T13:38:00-06:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Vulnhub - Sunset Dawn2 walkthrough</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Introduction
+The vulnhub discription says this VM is intermediate difficulty. Some of the skills you’ll be required to use are as follows:
+
+
+  basic reconnaissance
+  port mapping
+  unlisted file an...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/vulnhub-dawn3/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+-->
+
+
+
+
+
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Mar 10
+  
+
+  <i class="unloaded">2021-03-10T13:38:00-06:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Vulnhub - Sunset Dawn3 walkthrough</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Introduction
+Vulnhub dawn2 is listed on Vulnhub’s site as beginner/intermediate. This shares a lot of similarities with Sunset Dawn2, only this is VM is a bit easier to pop. Skills you’ll need are ...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
+
+
+
+    <!--
+  Navigation buttons at the bottom of the post.
+-->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+  <a href="/posts/vulnhub-dawn2/" class="btn btn-outline-primary"
+    prompt="Older">
+    <p>Vulnhub - Sunset Dawn2 walkthrough</p>
+  </a>
+  
+
+  
+  <a href="/posts/vulnhub-dawn3/" class="btn btn-outline-primary"
+    prompt="Newer">
+    <p>Vulnhub - Sunset Dawn3 walkthrough</p>
+  </a>
+  
+
 </div>
 
 
+    
 
+    </div> <!-- #post-extend-wrapper -->
+
+  </div> <!-- .col-* -->
+
+</div> <!-- .row -->
+
+
+
+  <!--
+  image lazy load: https://github.com/ApoorvSaxena/lozad.js
+-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('.post-content img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 

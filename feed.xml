@@ -1,0 +1,204 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>Matt M</title>
+  <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
+  <updated>2021-03-13T00:15:25-06:00</updated>
+  <author>
+    <name>Matt M</name>
+    <uri>/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en-US"
+    href="/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 Matt M </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Vulnhub - Sunset Dawn3 walkthrough</title>
+    <link href="/posts/vulnhub-dawn3/" rel="alternate" type="text/html" title="Vulnhub - Sunset Dawn3 walkthrough" />
+    <published>2021-03-10T13:38:00-06:00</published>
+  
+    <updated>2021-03-10T13:38:00-06:00</updated>
+  
+    <id>/posts/vulnhub-dawn3/</id>
+    <content src="/posts/vulnhub-dawn3/" />
+    <author>
+      <name>Matt M</name>
+    </author>
+
+  
+    
+    <category term="infosec" />
+    
+    <category term="vulnhub" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+Vulnhub dawn2 is listed on Vulnhub’s site as beginner/intermediate. This shares a lot of similarities with Sunset Dawn2, only this is VM is a bit easier to pop. Skills you’ll need are as follows:
+
+  basic port reconnaissance
+  port mapping
+  basic binary analysis
+  custom Metasploit module development
+
+
+Find the host on the network
+I use a lab for running these VMs. The lab’s netwo...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Alpine Linux - Using nftables</title>
+    <link href="/posts/alpine-nftables/" rel="alternate" type="text/html" title="Alpine Linux - Using nftables" />
+    <published>2021-03-08T09:57:00-06:00</published>
+  
+    <updated>2021-03-08T09:57:00-06:00</updated>
+  
+    <id>/posts/alpine-nftables/</id>
+    <content src="/posts/alpine-nftables/" />
+    <author>
+      <name>Matt M</name>
+    </author>
+
+  
+    
+    <category term="systems" />
+    
+    <category term="linux" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Setting up
+Install Alpine Linux. Having a port listening (ssh or http for example) will help in testing out your firewall rules.
+Next, install nftables with the following command.
+$ apk add nftables
+
+The Alpine installer will pull in any necessary dependencies.
+
+
+
+Configuration
+We’ll be working with the file /etc/firewall.nft. By default this file is empty. Let’s populate it. This is a basic nf...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Vulnhub - Sunset Dawn2 walkthrough</title>
+    <link href="/posts/vulnhub-dawn2/" rel="alternate" type="text/html" title="Vulnhub - Sunset Dawn2 walkthrough" />
+    <published>2021-03-03T13:38:00-06:00</published>
+  
+    <updated>2021-03-03T13:38:00-06:00</updated>
+  
+    <id>/posts/vulnhub-dawn2/</id>
+    <content src="/posts/vulnhub-dawn2/" />
+    <author>
+      <name>Matt M</name>
+    </author>
+
+  
+    
+    <category term="infosec" />
+    
+    <category term="vulnhub" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+The vulnhub discription says this VM is intermediate difficulty. Some of the skills you’ll be required to use are as follows:
+
+
+  basic reconnaissance
+  port mapping
+  unlisted file and directory discovery
+  basic disassembly
+  basic binary analysis
+
+
+And of course, creative thinking is very helpful.
+
+Finding the host on the network.
+This part is easy. I have a small private lab I ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Vulnhub walkthroughs</title>
+    <link href="/posts/vulnhub-walkthroughs/" rel="alternate" type="text/html" title="Vulnhub walkthroughs" />
+    <published>2021-03-01T10:02:00-06:00</published>
+  
+    <updated>2021-03-01T10:02:00-06:00</updated>
+  
+    <id>/posts/vulnhub-walkthroughs/</id>
+    <content src="/posts/vulnhub-walkthroughs/" />
+    <author>
+      <name>Matt M</name>
+    </author>
+
+  
+    
+    <category term="infosec" />
+    
+    <category term="vulnhub" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      On the issue of walkthroughs
+When I first discovered intentionally vulnerable virtual machines, I got so sucked into (lost even) in the world of ethical hacking. I absolutely loved thrill of quickly and effectively increasing my knowledge of digital attacks against computer systems.
+
+But something always bothered me. Quite often there were virtual machines that I was completely lost on. I’d ask...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
