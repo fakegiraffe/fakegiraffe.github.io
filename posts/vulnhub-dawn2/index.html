@@ -38,7 +38,7 @@
 <meta name="twitter:creator" content="@Matt M" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"datePublished":"2021-03-03T13:38:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/vulnhub-dawn2/"},"author":{"@type":"Person","name":"Matt M"},"url":"/posts/vulnhub-dawn2/","@type":"BlogPosting","description":"Introduction The vulnhub discription says this VM is intermediate difficulty. Some of the skills you’ll be required to use are as follows:","headline":"Vulnhub - Sunset Dawn2 walkthrough","dateModified":"2021-03-03T13:38:00-06:00","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Matt M"},"url":"/posts/vulnhub-dawn2/","@type":"BlogPosting","description":"Introduction The vulnhub discription says this VM is intermediate difficulty. Some of the skills you’ll be required to use are as follows:","headline":"Vulnhub - Sunset Dawn2 walkthrough","dateModified":"2021-03-03T13:38:00-06:00","datePublished":"2021-03-03T13:38:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/vulnhub-dawn2/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -583,7 +583,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1948 words">10 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1947 words">10 min</span>
 
 
           <!-- page views -->
@@ -654,7 +654,7 @@ Nice, a successful connection. Ok, let’s try to overflow the server.</p>
 </pre></td></tr></tbody></table></code></div></div>
 <p>This command<sup id="fnref:footnote2" role="doc-noteref"><a href="#fn:footnote2" class="footnote">2</a></sup> will print 100 capitol As and send them to the server. We’ll likely have to try this with numerous different sized payloads to achieve our overflow condition. I changed the payload incrementaly by 100 each time I didn’t get a server crash. When I sent 300 capitol As to the server, I finally got the result I was looking for.</p>
 
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/dawn2-8.png" alt="screenshot" width="350" /> .normal}</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/dawn2-8.png" alt="screenshot" width="350" class="normal" /></p>
 
 <p>Awesome, we’ve successfully crashed the program! Using x32dbg (because this is a 32bit program) we can see we’ve completely overwritten both the ebp and eip registers with many capitol A<sup id="fnref:footnote3" role="doc-noteref"><a href="#fn:footnote3" class="footnote">3</a></sup> characters. This is gold.
 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/dawn2-9.png" alt="screenshot" />

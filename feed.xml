@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Hi. I'm Matt.</title>
   <subtitle>A possibly useful blog. Find possibly useful infosec items here, among other random things.</subtitle>
-  <updated>2021-03-15T10:55:44-05:00</updated>
+  <updated>2021-03-15T11:26:25-05:00</updated>
   <author>
     <name>Matt M</name>
     <uri>/</uri>
@@ -51,14 +51,14 @@
       Introduction
 Vulnhub dawn2 is listed on Vulnhub’s site as beginner/intermediate. This shares a lot of similarities with Sunset Dawn2, only this is VM is a bit easier to pop. Skills you’ll need are as follows:
 
-  basic port reconnaissance
+  basic reconnaissance
   port mapping
-  basic binary analysis
+  basic binary analysis and disassembly
   custom Metasploit module development
 
 
 Find the host on the network
-I use a lab for running these VMs. The lab’s netwo...
+I use a lab for running these VMs. The ...
     </summary>
   
 

@@ -12,7 +12,7 @@
 
 
 
-    "snippet": "IntroductionVulnhub dawn2 is listed on Vulnhub’s site as beginner/intermediate. This shares a lot of similarities with Sunset Dawn2, only this is VM is a bit easier to pop. Skills you’ll need are as follows:  basic port reconnaissance  port mapping  basic binary analysis  custom Metasploit module..."
+    "snippet": "IntroductionVulnhub dawn2 is listed on Vulnhub’s site as beginner/intermediate. This shares a lot of similarities with Sunset Dawn2, only this is VM is a bit easier to pop. Skills you’ll need are as follows:  basic reconnaissance  port mapping  basic binary analysis and disassembly  custom Metasp..."
   },
   
   {
