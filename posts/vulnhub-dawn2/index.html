@@ -583,7 +583,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1947 words">10 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1949 words">10 min</span>
 
 
           <!-- page views -->
@@ -805,7 +805,7 @@ A note before we actually run this exploit. If you’re using AntiVirus software
 
 <p>Ok, having said that, let’s run it.
 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/dawn2-15.png" alt="screenshot" />
-Excellent, it worked and we have shell on the remote system as the use running the dawn.exe program.</p>
+Excellent, it worked and we have shell on the remote system as the user that is running the dawn.exe program.</p>
 
 <h2 id="attacking-the-server">Attacking the Server</h2>
 <p>Now that we know our exploit works against the standalone server we ran on our Windows machine, let’s try it against our VM we downloaded from <code class="language-plaintext highlighter-rouge">Vulnhub</code>. The only thing we really need to change is the IP address. Point that to your dawn2 VM and run the exploit.
@@ -818,7 +818,7 @@ And it works! Great. Now grab that first flag.</p>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/dawn2-17.png" alt="screenshot" class="normal" /></p>
 
-<p>The above screenshot shows us as much. Ok so we have a shell on the remote dawn2 server. Our goal is to root this box. We could try to escalate privileges from this point, but there are two things to note. Port 1435 is open and we haven’t really messed with that yet. Exporing that port proves that it’s unstable and prone to crash, much like port 1985 on both our dawn2 server and the dawn.exe binary we developed our exploit with. I’m betting that’s another dawn executable running. What if we change our port to 1435 and run our exploit against that?</p>
+<p>The above screenshot shows us as much. Ok so we have a shell on the remote dawn2 server. Our goal is to root this box. We could try to escalate privileges from this point, but there are two things to note. Port 1435 is open and we haven’t really messed with that yet. Exploring that port proves that it’s unstable and prone to crash, much like port 1985 on both our dawn2 server and the dawn.exe binary we developed our exploit with. I’m betting that’s another dawn executable running. What if we change our port to 1435 and run our exploit against that?</p>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/img/images/dawn2-18.png" alt="screenshot" class="normal" /></p>
 
