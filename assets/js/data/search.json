@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Phoenix stack-zero",
+    "url": "/posts/exploit-education-stack-zero/",
+    "categories": "phoenix, stack-zero",
+    "tags": "infosec, hacking, binary exploitation, phoenix, exploit",
+    "date": "2021-11-25 07:34:00 -0600",
+    
+
+
+
+
+
+    "snippet": "IntroductionThe phoenix exploit education series by phoenix is a really good place to start when beginning binary exploitation. We have the source code available which can sometimes make thing easier.stack-zeroThis is as simple as it gets. I won’t go into much detail at all here, since this is su..."
+  },
+  
+  {
     "title": "Vulnhub - Sunset Dawn3 walkthrough",
     "url": "/posts/vulnhub-dawn3/",
     "categories": "infosec, vulnhub",

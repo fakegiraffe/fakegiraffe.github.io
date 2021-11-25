@@ -4,7 +4,7 @@
   <id>/</id>
   <title>Hi. I'm Matt.</title>
   <subtitle>A possibly useful blog. Find possibly useful infosec items here, among other random things.</subtitle>
-  <updated>2021-06-02T11:01:44-05:00</updated>
+  <updated>2021-11-25T08:23:17-06:00</updated>
   <author>
     <name>Matt M</name>
     <uri>/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Phoenix stack-zero</title>
+    <link href="/posts/exploit-education-stack-zero/" rel="alternate" type="text/html" title="Phoenix stack-zero" />
+    <published>2021-11-25T07:34:00-06:00</published>
+  
+    <updated>2021-11-25T07:34:00-06:00</updated>
+  
+    <id>/posts/exploit-education-stack-zero/</id>
+    <content src="/posts/exploit-education-stack-zero/" />
+    <author>
+      <name>Matt M</name>
+    </author>
+
+  
+    
+    <category term="phoenix" />
+    
+    <category term="stack-zero" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introduction
+The phoenix exploit education series by phoenix is a really good place to start when beginning binary exploitation. We have the source code available which can sometimes make thing easier.
+
+stack-zero
+This is as simple as it gets. I won’t go into much detail at all here, since this is such a fundamentally easy binary to exploit. If you wish to learn more about What’s happening here...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
